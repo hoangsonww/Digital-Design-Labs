@@ -5,15 +5,15 @@
 ;    with 4 LEDs, where the user inputs a combination via the PORTA   *
 ;    pins and the program checks the input against the active LED. If * 
 ;    the input is correct, the WIN LED will light up, otherwise, the  *
-;    ERR LED will light up.					      *	    
-;						                      *
+;    ERR LED will light up.					                          *
+;						                                              *
 ;**********************************************************************
 ;                                                                     *
-;    Filename:        Homework11.asm                                  *
+;    Filename:        GuessingGame.asm                                *
 ;    Date:            04/30/2023                                      *
 ;    File Version:    1.0                                             *
 ;                                                                     *
-;    Author:          David Nguyen				      *
+;    Author:          David Nguyen				                      *
 ;    Company:         Case Western Reserve University                 *
 ;                                                                     *
 ;                                                                     *

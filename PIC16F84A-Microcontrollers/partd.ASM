@@ -12,7 +12,7 @@
 ;                                                                     *
 ;**********************************************************************
 ;                                                                     *
-;    Filename:        xxx.asm                                         *
+;    Filename:        partd.asm                                         *
 ;    Date:                                                            *
 ;    File Version:                                                    *
 ;                                                                     *
@@ -38,7 +38,7 @@
 
     list      p=16F84A             ; list directive to define processor
     #include <p16F84a.inc>         ; processor specific variable definitions
-
+				   
     __CONFIG   _CP_OFF & _WDT_OFF & _PWRTE_ON & _RC_OSC
 
 ; '__CONFIG' directive is used to embed configuration data within .asm file.
@@ -49,6 +49,7 @@
 w_temp        EQU     0x0C        ; variable used for context saving 
 status_temp   EQU     0x0D        ; variable used for context saving
 my_result     EQU     0x0E
+ctr           EQU     0x0F
 ;**********************************************************************
 RESET_VECTOR      CODE    0x0000  ; processor reset vector
         goto    start             ; go to beginning of program
@@ -71,39 +72,46 @@ Interrupt:
 
 MAIN_PROGRAM    CODE
 
-; David Nguyen    
+; David Nguyen
     
 start:
 
 ; remaining code goes here
     clrf my_result
-    ; Add 1 to my_result ten times
-    incf my_result,f ; make sure you increment my_result nine more times
-    incf my_result,f
-    incf my_result,f
-    incf my_result,f
-    incf my_result,f
-    incf my_result,f
-    incf my_result,f
-    incf my_result,f
-    incf my_result,f
-    incf my_result,f
+    movlw 0x0A
+    movwf ctr ; makes the counter value equal to 10
     
-    movlw 3 ; this line writes 3 to w-reg
-    subwf my_result,f ; this line will subtract 3 from my_result
-    ; repeat the subtraction line three more times
-    subwf my_result,f
-    subwf my_result,f
-    subwf my_result,f
+    movf PORTB,w
+    andlw 0x0F ; this will retain the least significant four bits (bits 3-0) 
+               ; and it will remove the value in the bits 7-4
+	       
     
+loop1:
+    addwf my_result,f
+    decfsz ctr,f
+    goto loop1
+    
+    ; first set the ctr to 4 for the subtraction loop
+    movlw 0x04
+    movwf ctr
+    
+    swapf PORTB,w ; get the decrement amount from PORTB
+    andlw 0x0F
+     
+    ; Complete for the subtraction loop
+loop2:
+    subwf my_result,f
+    decfsz ctr,f
+    goto loop2    
+    
+    
+    ; Complete the comparison with -2 part
+    ; remember this is xor with 1 code from part b
     movlw 1
     xorwf my_result,1
-    
-    
-fin:
-    goto fin
-  
 
-  
+fin: 
+    goto fin
+
         END                       ; directive 'end of program'
 

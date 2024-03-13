@@ -8,7 +8,7 @@ This repository contains a suite of digital design modules written in SystemVeri
 
 ### SystemVerilog Modules
 
-- **3to8Decoder.sv**: Implements a 3-to-8 line decoder with enable functionality, translating 3-bit binary inputs into an 8-bit one-hot encoded output.
+- **DecoderEncoder.sv**: Implements a 3-to-8 line decoder and a 8-to-3 encoder with enable functionality, translating 3-bit binary inputs into an 8-bit one-hot encoded output and vice versa.
 - **alu_slice.sv**: Represents a slice of an Arithmetic Logic Unit (ALU) capable of performing a variety of arithmetic and logical operations.
 - **cla_adder.sv**: A carry-lookahead adder module that provides fast binary addition by pre-computing carry signals.
 - **gen_alu.sv**: A general ALU module that combines multiple `alu_slice` modules to perform operations on wider data.

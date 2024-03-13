@@ -12,7 +12,7 @@
 ;                                                                     *
 ;**********************************************************************
 ;                                                                     *
-;    Filename:        xxx.asm                                         *
+;    Filename:        parta.asm                                         *
 ;    Date:                                                            *
 ;    File Version:                                                    *
 ;                                                                     *
@@ -48,8 +48,7 @@
 ;***** VARIABLE DEFINITIONS
 w_temp        EQU     0x0C        ; variable used for context saving 
 status_temp   EQU     0x0D        ; variable used for context saving
-my_result     EQU     0x0E
-ctr           EQU     0x0F
+
 ;**********************************************************************
 RESET_VECTOR      CODE    0x0000  ; processor reset vector
         goto    start             ; go to beginning of program
@@ -71,37 +70,40 @@ Interrupt:
         retfie                    ; return from interrupt
 
 MAIN_PROGRAM    CODE
-
-; David Nguyen    
+  
+; David Nguyen
     
 start:
 
 ; remaining code goes here
-    clrf my_result
-    movlw 0x0A
-    movwf ctr ; makes the counter value equal to 10
     
-loop1:
-    incf my_result,f
-    decfsz ctr,f
-    goto loop1
-    movlw 0x04
-    movwf ctr
+    clrw ; clears the w-register
+    ; need to add 1 ten times to w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
+    addlw 1 ; adds the value 1 to the w-reg
     
-    ; Complete for the subtraction loop
-loop2:
-    movlw 3
-    subwf my_result,f
-    decfsz ctr,f
-    goto loop2    
+    ; Next step is to subtract 3 four times
+    addlw -3 ; this instruction will subtract 3 from w-reg
+    addlw -3 ; this instruction will subtract 3 from w-reg
+    addlw -3 ; this instruction will subtract 3 from w-reg
+    addlw -3 ; this instruction will subtract 3 from w-reg
     
-    ; Complete the comparison with -2 part
-    ; remember this is xor with 1 code from part b
-    movlw 1
-    xorwf my_result,1
-
-fin: 
+    ;Need to compare if the result is -2
+    ;-2 in two's complement representation is 0xFE ('B 111111110)
+    ;We do not have xnor as instruction so we need to use xor with 'B00000001
+    xorlw 1
+    
+fin:
     goto fin
+    
 
         END                       ; directive 'end of program'
 
