@@ -33,7 +33,7 @@ The simulation module operates in the following manner:
 
 The module uses a clock signal to periodically change the input value, demonstrating the dynamic operation of the decoder and encoder.
 
-## Example Output
+## Example Verilog Output
 
 ![Test Output](test_output.png)
 

@@ -1,4 +1,4 @@
-# Digital Design in System Verilog and Assembly
+# Digital Design in `System Verilog` and `Assembly`
 
 ## Overview
 

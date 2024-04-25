@@ -4,52 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613b80a6-c228-404a-9ccd-a2446e0bd951" name="Changes" comment="Update: Added SV and ASM files">
-      <change afterPath="$PROJECT_DIR$/Arithmetic-Logic-Unit/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Carry-Lookahead-Adder/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Counter/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Counter/test_output.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Finite-State-Machine/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/P16F84A.inc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/At State S1 (no input is selected).JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/At State S2 (no input is selected).JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/At State S3 (no input is selected).JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/At State S4 (no input is selected).JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/Back to State S1 when at S4 and no guess is made.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/When a correct guess is made.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/When an incorrect guess is made.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/output_images/When two guesses are made at the same time.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PIC16F84A-Microcontrollers/P16F84A.inc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PIC16F84A-Microcontrollers/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ripple-Carry-Adder/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ripple-Carry-Adder/test_output.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Verilog-Logic-Modules/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Verilog-Logic-Modules/test_output.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3to8Decoder.sv" beforeDir="false" afterPath="$PROJECT_DIR$/3-to-8-Decoder/3to8Decoder.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessingGame.ASM" beforeDir="false" afterPath="$PROJECT_DIR$/Guessing-Game-Assembly/GuessingGame.ASM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alu_slice.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Arithmetic-Logic-Unit/alu_slice.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cla_adder.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Carry-Lookahead-Adder/cla_adder.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_alu.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Arithmetic-Logic-Unit/gen_alu.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_b.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Verilog-Logic-Modules/module_b.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_d.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Verilog-Logic-Modules/module_d.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_s.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Verilog-Logic-Modules/module_s.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parta.ASM" beforeDir="false" afterPath="$PROJECT_DIR$/PIC16F84A-Microcontrollers/parta.ASM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partb.ASM" beforeDir="false" afterPath="$PROJECT_DIR$/PIC16F84A-Microcontrollers/partb.ASM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partc.ASM" beforeDir="false" afterPath="$PROJECT_DIR$/PIC16F84A-Microcontrollers/partc.ASM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partd.ASM" beforeDir="false" afterPath="$PROJECT_DIR$/PIC16F84A-Microcontrollers/partd.ASM" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rc_adder4.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Ripple-Carry-Adder/rc_adder4.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rc_adder_slice.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Ripple-Carry-Adder/rc_adder_slice.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tbird_fsm.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Finite-State-Machine/tbird_fsm.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testbench_2.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Verilog-Logic-Modules/testbench_2.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testbench_3.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Ripple-Carry-Adder/testbench_3.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testbench_4.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Arithmetic-Logic-Unit/testbench_4.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testbench_5.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Carry-Lookahead-Adder/testbench_5.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testbench_7.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/testbench_7.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testbench_8.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Finite-State-Machine/testbench_8.sv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/up_down_counter.sv" beforeDir="false" afterPath="$PROJECT_DIR$/Counter/up_down_counter.sv" afterDir="false" />
-    </list>
+    <list default="true" id="613b80a6-c228-404a-9ccd-a2446e0bd951" name="Changes" comment="Update: Refactored Code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,11 +51,11 @@
       <recent name="C:\Users\hoang\IdeaProjects\Digital-Design-Labs\Guessing-Game-Assembly" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hoang\IdeaProjects\Digital-Design-Labs\3-to-8-Decoder" />
       <recent name="C:\Users\hoang\IdeaProjects\Digital-Design-Labs\Counter" />
       <recent name="C:\Users\hoang\IdeaProjects\Digital-Design-Labs\Guessing-Game-Assembly\output_images" />
       <recent name="C:\Users\hoang\IdeaProjects\Digital-Design-Labs\Guessing-Game-Assembly" />
       <recent name="C:\Users\hoang\IdeaProjects\Digital-Design-Labs\Ripple-Carry-Adder" />
-      <recent name="C:\Users\hoang\IdeaProjects\Digital-Design-Labs\Verilog-Logic-Modules" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -119,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710281231539</updated>
       <workItem from="1710281232669" duration="642000" />
-      <workItem from="1710350583896" duration="1877000" />
+      <workItem from="1710350583896" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="Update: Added SV and ASM files">
       <option name="closed" value="true" />
@@ -129,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710281871221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update: Refactored Code">
+      <option name="closed" value="true" />
+      <created>1710352770621</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710352770621</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update: Added SV and ASM files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Added SV and ASM files" />
+    <MESSAGE value="Update: Refactored Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Refactored Code" />
   </component>
 </project>
