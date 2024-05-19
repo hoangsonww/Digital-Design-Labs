@@ -48,4 +48,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-We thank all the contributors and users of this repository for their interest in digital design and assembly programming.
+I'd like to thank all the contributors and users of this repository for their interest in digital design and assembly programming!
+
+---
+
+Created with ❤️ by [Son Nguyen](https://github.com/hoangsonww) in 2024.
