@@ -30,6 +30,8 @@ To run the SystemVerilog files, you'll need to have an HDL simulator like ModelS
 
 For the assembly language files, an assembler and simulator for the specific microprocessor architecture they are written for are required. These files can be assembled into machine code, loaded, and run on the simulator to watch the program's execution.
 
+**IMPORTANT**: You are also encouraged to visit the specific directories and files to read the code and understand the design and implementation details. There will also be README files in these directories providing additional information about the modules and programs.
+
 ## How to Use
 
 1. Clone the repository to your local machine.
