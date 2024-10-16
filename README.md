@@ -22,13 +22,14 @@ This repository contains a suite of digital design modules written in SystemVeri
 ### Assembly Programs
 
 - **GuessingGame.ASM**: An interactive guessing game written in assembly language, demonstrating branching and memory interfacing on a microprocessor.
+- **guessing_game_simuli_Spring2023.sbs**: A stimulus file for testing the Assembly scripts of the Guessing Game (not provided here - you can easily create your own or contact me to request one.)
 - **parta.ASM**, **partb.ASM**, **partc.ASM**, **partd.ASM**: Assembly programs covering different aspects of assembly language programming and microprocessor operations.
 
 ## Getting Started
 
-To run the SystemVerilog files, you'll need to have an HDL simulator like ModelSim or Vivado installed. You can compile and simulate each module and its corresponding testbench to observe the behavior and validate the design.
+To run the SystemVerilog files, you'll need to have an HDL simulator like ModelSim or Vivado installed. You can compile and simulate each module and its corresponding testbench to observe the behavior and validate the design. For your information, I used [ModelSim](https://www.intel.com/content/www/us/en/software-kit/750666/modelsim-intel-fpgas-standard-edition-software-version-20-1-1.html) to develop with Verilog.
 
-For the assembly language files, an assembler and simulator for the specific microprocessor architecture they are written for are required. These files can be assembled into machine code, loaded, and run on the simulator to watch the program's execution.
+For the Assembly language files, an assembler and simulator for the specific microprocessor architecture they are written for **(PIC16F84A)** are required. These files can be assembled into machine code, loaded, and run on the simulator to watch the program's execution. Additionally, I use [WinAsm](https://winasm.org/) to write Assembly code.
 
 **IMPORTANT**: You are also encouraged to visit the specific directories and files to read the code and understand the design and implementation details. There will also be README files in these directories providing additional information about the modules and programs.
 
